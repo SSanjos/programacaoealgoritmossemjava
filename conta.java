@@ -1,5 +1,5 @@
 package cursoLetsCode;
-//Exemplo simples, mas poderoso, aborda algumas operações financeiras elementares de um correntista em um Banco qualquer. 
+//Exemplo simples, mas poderoso, aborda algumas operações financeiras elementares de uma conta corrente em um Banco qualquer.  
 
 import java.util.Scanner;
 
