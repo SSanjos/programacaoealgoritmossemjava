@@ -8,17 +8,17 @@ public class AdivinharNumero {
 	public static void main(String[] args) {
 
 		Scanner teclado = new Scanner(System.in);
-		System.out.println("Adivinhar número entre 0 e 100 com 10 chances");
+		System.out.println("Adivinhar nÃºmero entre 0 e 100 com 10 chances");
 
 		String menu = "S";
 		while (menu.equalsIgnoreCase("S")) {
 
 			Random random = new Random();
-			int numR = random.nextInt(100); // Gerando números inteiros aleatórios de 0 à 100
+			int numR = random.nextInt(100); // Gerando nÃºmeros inteiros aleatÃ³rios de 0 Ã  100
 
 			int i = 1;
 			for (; i <= 10; i++) {
-				System.out.print(i + "ª tentativa. Informe o seu palpite: ");
+				System.out.print(i + "Âª tentativa. Informe o seu palpite: ");
 				int palpite = teclado.nextInt();
 				if (palpite > numR) {
 					System.out.println("Chutou alto!");
@@ -30,14 +30,15 @@ public class AdivinharNumero {
 				}
 			}
 			if (i == 11) {
-				System.out.println("Você não conseguiu, tente novamente!");
-				System.out.println("O número era: " + numR);
+				System.out.println("VocÃª nÃ£o conseguiu, tente novamente!");
+				System.out.println("O nÃºmero era: " + numR);
 			}
 			System.out.println("Realizar uma nova partida?");
 			System.out.print("Digite S para continuar ou qualquer tecla para encerrar. ");
 			menu = teclado.next();
 		}
-		System.out.println("Aplicação Encerrada");
+		System.out.println("AplicaÃ§Ã£o Encerrada");
+		System.out.println("OlÃ¡ Sandro, brother aceita aÃ­ pull Request...");
 
 		teclado.close();
 	}
